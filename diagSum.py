@@ -10,7 +10,7 @@ def printDiagonalSums(mat, n):
 			if (i == j):
 				principal += mat[i][j]
 
-			if ((i + j + 1) == (n - 1)):
+			if ((i + j) == (n - 1)):
 				secondary += mat[i][j]
 		
 	print("Principal Diagonal:", principal)
