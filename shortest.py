@@ -62,6 +62,7 @@ g.add_edge(1, 5, 2)  # B -> F, weight 2
 g.add_edge(6, 5, 5)  # G -> F, weight 5
 
 print("Dijkstra's Algorithm starting from vertex D:\n")
-distances = d.dijkstra('D')
+# change d to g
+distances = g.dijkstra('D')
 for i, d in enumerate(distances):
     print(f"Shortest distance from D to {g.vertex_data[i]}: {d}")
